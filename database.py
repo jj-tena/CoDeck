@@ -1,3 +1,4 @@
+import re
 import sqlite3 as sql
 
 def createDB():
@@ -102,8 +103,9 @@ if __name__ == "__main__":
     #createTable()
     #insertRow(0, "hola")
     #readRows()
-    #buttonList = [(1, "A"), (2, "B"), (3, "C")]
+    #buttonList = [(1, "Inserta una acción para el boton 1"), (2, "Inserta una acción para el boton 2"), (3, "Inserta una acción para el boton 3"), (4, "Inserta una acción para el boton 4"), (5, "Inserta una acción para el boton 5"), (6, "Inserta una acción para el boton 6"), (7, "Inserta una acción para el boton 7"), (8, "Inserta una acción para el boton 8"), (9, "Inserta una acción para el boton 9")]
     #insertRows(buttonList)
     #readOrdered("button")
-    deleteRows()
+    #deleteRows()
+    readRows()
 

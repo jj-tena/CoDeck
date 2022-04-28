@@ -1,11 +1,11 @@
 from cgitb import text
 import tkinter as tk
-from tkinter import filedialog
+from tkinter import N, filedialog
 from webbrowser import get
 
 import database
-
-def browse_files(path):
+        
+def browse_files(path, number):
     filename = filedialog.askopenfilename(
         initialdir="./",
         title="Select a File",
@@ -16,17 +16,19 @@ def browse_files(path):
     )
 
     print(filename)
-    database.insertRow(1, filename)
+
+    database.updateRow(number, filename)
 
     # Change runtime variable to notify the user that the path has
     # been selected correctly
     path.set(filename)
 
 
-def save_path(path):
+def save_path(path, number):
 
     print(path)
-    database.insertRow(1, path)
+
+    database.updateRow(number, path)
 
 
 def create_input(app, number):
@@ -37,14 +39,14 @@ def create_input(app, number):
 
     # Variable to store the path on runtime
     path = tk.StringVar(
-        app, value=f'Cargar desde SQLite el path al script {number}')
+        app, value=database.readRow(number))
 
     # Create widgets
     create_label(script_frame,number+1)
     create_button(script_frame, "#5C80BC", "#3B5B91", "left",
-                  "Find", lambda: browse_files(path))
+                  "Find", lambda: browse_files(path, number))
     create_button(script_frame, "#F9627D", "#F7264D", "right",
-                  "Save", lambda: save_path(path.get()))
+                  "Save", lambda: save_path(path.get(), number))
     create_entry(script_frame, path)
 
 def create_label(frame, number):
