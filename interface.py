@@ -3,6 +3,7 @@ import tkinter as tk
 from tkinter import filedialog
 from webbrowser import get
 
+import database
 
 def browse_files(path):
     filename = filedialog.askopenfilename(
@@ -14,8 +15,8 @@ def browse_files(path):
         )
     )
 
-    # Aqui en vez de imprimir guardar
     print(filename)
+    database.insertRow(1, filename)
 
     # Change runtime variable to notify the user that the path has
     # been selected correctly
@@ -23,8 +24,9 @@ def browse_files(path):
 
 
 def save_path(path):
-    # Este path que te llega guardarlo en vez de pintarlo
+
     print(path)
+    database.insertRow(1, path)
 
 
 def create_input(app, number):
@@ -44,7 +46,6 @@ def create_input(app, number):
     create_button(script_frame, "#F9627D", "#F7264D", "right",
                   "Save", lambda: save_path(path.get()))
     create_entry(script_frame, path)
-
 
 def create_label(frame, number):
     tk.Label(
@@ -84,14 +85,12 @@ def create_title(app):
         font=("Ubuntu Mono", 26)
     ).pack(fill=tk.BOTH, expand=True)
 
-
 def setup_interface():
     app = tk.Tk()
     app.geometry("900x900")
     app.configure(background="#30323D")
     app.title("CoDeck")
     return app
-
 
 def main():
     app = setup_interface()
@@ -101,7 +100,6 @@ def main():
         create_input(app, i+1)
 
     app.mainloop()
-
 
 if __name__ == "__main__":
     main()
