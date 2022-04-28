@@ -1,5 +1,6 @@
 import re
 import sqlite3 as sql
+import os
 
 def createDB():
     conn = sql.connect("CoDeck.db")
@@ -108,4 +109,6 @@ if __name__ == "__main__":
     #readOrdered("button")
     #deleteRows()
     readRows()
+    #os.system("python3 " + getPath(1))
+
 
