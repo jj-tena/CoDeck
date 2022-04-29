@@ -37,12 +37,16 @@ def create_input(app, number):
     script_frame = tk.Frame(app, height=10, padx=30, pady=15)
     script_frame.pack(fill="both", expand=True)
 
+
+    
     # Variable to store the path on runtime
     path = tk.StringVar(
-        app, value=database.readRow(number))
+        app, value=database.getPath(number))
+
+    # print(database.readRow(nunb))
 
     # Create widgets
-    create_label(script_frame,number+1)
+    create_label(script_frame,number)
     create_button(script_frame, "#5C80BC", "#3B5B91", "left",
                   "Find", lambda: browse_files(path, number))
     create_button(script_frame, "#F9627D", "#F7264D", "right",

@@ -109,6 +109,5 @@ if __name__ == "__main__":
     #readOrdered("button")
     #deleteRows()
     readRows()
-    #os.system("python3 " + getPath(1))
 
 

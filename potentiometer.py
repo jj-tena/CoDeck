@@ -16,7 +16,8 @@ while True:
         if line:
             string = line.decode().strip()  # convert the byte string to a unicode string
             print("Has pulsado el botón " + string)
-            os.system("python3 " + database.getPath(string))
+            button = int(string)
+            os.system("python3 " + database.getPath(button))
     except:
         print("Error")
         

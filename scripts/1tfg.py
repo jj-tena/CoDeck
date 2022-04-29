@@ -2,10 +2,10 @@ import subprocess
 import docker
 
 # Open VS Code
-subprocess.run(['code','/home/cfres/Codigo'])
+subprocess.run(['code','.'])
 
 # Open Intellij Idea
-subprocess.run(['intellij-idea-ultimate-edition'])
+subprocess.run(['intellij-idea-ultimate'])
 
 # Run mySQL in docker container
 client = docker.from_env()

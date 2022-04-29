@@ -1,3 +1,4 @@
 # Open Intellij Idea
-subprocess.run(['intellij-idea-ultimate-edition'])
+import subprocess
+subprocess.run(['intellij-idea-ultimate'])
 
