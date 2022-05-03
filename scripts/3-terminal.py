@@ -1,2 +1,2 @@
 import os
-os.system("gnome-terminal -- command")
+os.system("gnome-terminal")

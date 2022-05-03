@@ -9,7 +9,9 @@ import database
 ser = serial.Serial('/dev/ttyACM0', 9600)
 time.sleep(2)
 
-while True:
+button = 0
+
+while button != 12:
     try:
         print("Pulsa un botón")
         line = ser.readline()   # read a byte

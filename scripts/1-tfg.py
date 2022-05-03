@@ -5,5 +5,5 @@ import os
 os.system("code .")
 
 # Open Intellij Idea
-subprocess.run(['intellij-idea-ultimate'])
+os.system("firefox https://es.overleaf.com/")
 

@@ -102,7 +102,7 @@ def main():
     app = setup_interface()
     create_title(app)
   
-    for i in range(0, 8):
+    for i in range(0, 11):
         create_input(app, i+1)
 
     app.mainloop()
