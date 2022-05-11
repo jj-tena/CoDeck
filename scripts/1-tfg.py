@@ -5,5 +5,5 @@ import os
 os.system("code .")
 
 # Open Intellij Idea
-os.system("firefox https://es.overleaf.com/")
+os.system("google-chrome-stable --new-window https://es.overleaf.com/")
 
