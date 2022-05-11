@@ -2,7 +2,6 @@
 import os
 import serial
 import time
-
 import data.database as database
 
 # make sure the 'COM#' is set according the Windows Device Manager
