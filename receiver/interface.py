@@ -3,7 +3,7 @@ import tkinter as tk
 from tkinter import N, filedialog
 from webbrowser import get
 
-import database
+import data.database as database
         
 def browse_files(path, number):
     filename = filedialog.askopenfilename(

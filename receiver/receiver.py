@@ -3,7 +3,7 @@ import os
 import serial
 import time
 
-import database
+import data.database as database
 
 # make sure the 'COM#' is set according the Windows Device Manager
 ser = serial.Serial('/dev/ttyACM0', 9600)
