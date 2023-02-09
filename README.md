@@ -3,7 +3,8 @@
 ## Concept
 
 CoDeck is an IoT project developed by José Manuel Aguado Gala, Cristian De Gracia Nuero and José Justo Tena Agudo. 
-It consists of a keyboard to whose keys can be assigned different scripts developed by the user, this allows us to associate keyboard shortcuts, interaction with the browser, operating system commands or execution of software installed on CoDeck among many other options.
+
+It consists of a keyboard to whose keys can be assigned different scripts developed by the user, this allows us to associate keyboard shortcuts, interaction with the browser, operating system commands or execution of software installed on CoDeck among many other options, you can see a picture of the product in final-product.jpeg and a video of the project running in video-demo.mp4.
 
 ## Hardware
 
