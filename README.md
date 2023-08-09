@@ -11,15 +11,15 @@ You can see a picture of the product in final-product.jpeg and a video of the pr
 ## Hardware
 
 On the hardware side we have a keyboard created on Arduino components that allows us to send a certain signal depending on the key pressed to a program developed in Arduino.
-[Video demo] (https://www.youtube.com/watch?v=Xfc7eXz2C4g)
+[Video demo](https://www.youtube.com/watch?v=Xfc7eXz2C4g)
 
 ## Software
 
 On the software side, the Arduino program communicates the signals it receives to a code developed in Python which offers an interface developed using TKinder that allows the user to associate their scripts to each of the keys and persistence of these associations and scripts through a SQLite database.
-[Video demo] (https://www.youtube.com/watch?v=biIteA__xX0)
+[Video demo](https://www.youtube.com/watch?v=biIteA__xX0)
 
 ## Extended review of the project
 
-(https://blogs.etsii.urjc.es/dseytr/codeck/)https://blogs.etsii.urjc.es/dseytr/codeck/
+[Extended blog](https://blogs.etsii.urjc.es/dseytr/codeck/)https://blogs.etsii.urjc.es/dseytr/codeck/)
 
 
