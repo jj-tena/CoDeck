@@ -20,6 +20,6 @@ On the software side, the Arduino program communicates the signals it receives t
 
 ## Extended review of the project
 
-[Extended blog](https://blogs.etsii.urjc.es/dseytr/codeck/)https://blogs.etsii.urjc.es/dseytr/codeck/)
+[Extended blog](https://blogs.etsii.urjc.es/dseytr/codeck/)
 
 
